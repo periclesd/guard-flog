@@ -14,6 +14,7 @@ module Guard
           UI.info "Running flog for file: '#{path}'", reset: true
           @flogger.flog(path)
           @flogger.report
+          puts
         end
       end
     end
