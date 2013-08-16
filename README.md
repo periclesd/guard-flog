@@ -1,29 +1,58 @@
 # Guard::Flog
 
-TODO: Write a gem description
+Flog guard flogs every file on change.
 
-## Installation
+* Compatible with Bundler 1.0.x
 
-Add this line to your application's Gemfile:
+## Install
 
-    gem 'guard-flog'
+Please be sure to have [Guard](https://github.com/guard/guard) installed before continue.
 
-And then execute:
+Install the gem:
 
-    $ bundle
+```
+$ gem install guard-flog
+```
 
-Or install it yourself as:
+Add it to your Gemfile (inside development group):
 
-    $ gem install guard-flog
+``` ruby
+group :development do
+  gem 'guard-flog'
+end
+```
+
+Add guard definition to your Guardfile by running this command:
+
+```
+$ guard init flog
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Please read [Guard usage doc](https://github.com/guard/guard#readme)
 
-## Contributing
+## Guardfile
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```ruby
+guard :flog do
+  watch(%r{^lib/(.+)\.rb$})
+
+  # Rails example
+  watch(%r{^app/(.+)\.rb$})
+end
+```
+
+Please read [Guard doc](https://github.com/guard/guard#readme) for more information about the Guardfile DSL.
+
+## Development
+
+* Source hosted at [GitHub](https://github.com/guard/guard-flog)
+* Report issues/Questions/Feature requests on [GitHub Issues](https://github.com/guard/guard-flog/issues)
+
+Pull requests are very welcome! Make sure your patches are well tested. Please create a topic branch for every separate change
+you make.
+
+## Authors
+
+[Péricles Dias](https://github.com/pericles)
