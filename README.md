@@ -1,4 +1,4 @@
-# Guard::Flog [![Dependency Status](https://gemnasium.com/pericles/guard-flog.png)](https://gemnasium.com/pericles/guard-flog)
+# Guard::Flog [![Dependency Status](https://gemnasium.com/pericles/guard-flog.png)](https://gemnasium.com/pericles/guard-flog) [![Code Climate](https://codeclimate.com/github/pericles/guard-flog.png)](https://codeclimate.com/github/pericles/guard-flog)
 
 Flog guard flogs every file on change.
 
