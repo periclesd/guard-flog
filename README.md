@@ -1,4 +1,4 @@
-# Guard::Flog
+# Guard::Flog [![Dependency Status](https://gemnasium.com/pericles/guard-flog.png)](https://gemnasium.com/pericles/guard-flog)
 
 Flog guard flogs every file on change.
 
