@@ -39,6 +39,12 @@ end
 
 Please read [Guard doc](https://github.com/guard/guard#readme) for more information about the Guardfile DSL.
 
+## TODO
+
+* Tests
+* Notifications
+* Guard params
+
 ## Development
 
 * Source hosted at [GitHub](https://github.com/pericles/guard-flog)
