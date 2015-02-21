@@ -1,8 +1,7 @@
-require 'guard'
-require 'guard/guard'
+require 'guard/compat/plugin'
 
 module Guard
-  class Flog < Guard
+  class Flog < Plugin
     autoload :Flogger, 'guard/flog/flogger'
 
     def start; end
