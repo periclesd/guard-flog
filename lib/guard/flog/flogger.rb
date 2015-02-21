@@ -3,9 +3,9 @@ require 'flog_cli'
 module Guard
   class Flog
     class Flogger
-      def initialize
+      def initialize(options)
         ::FlogCLI.load_plugins
-        options = ::FlogCLI.parse_options
+        options ||= ::FlogCLI.parse_options
         @flogger = ::FlogCLI.new(options)
       end
 
